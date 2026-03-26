@@ -74,7 +74,7 @@ GT.calculate_g_coefficients(fixed_facets=['i'])
 GT.g_coefficients_summary()
 
 # 3. Perform a D Study with different facet levels
-GT.calculate_d_study(levels={'Person': [8], 'i': [4, 8], 'o': [1, 2]})
+GT.calculate_d_study(d_study_design={'Person': [8], 'i': [4, 8], 'o': [1, 2]})
 GT.d_study_summary()
 
 # 4. Calculate Confidence Intervals
@@ -84,7 +84,7 @@ GT.confidence_intervals_summary()
 
 ### Input Data Format
 
-The data should be structureda as a pandas DataFrame in a long format, where each row corresponds to a unique combination of the facets and the response variable.
+The data should be structured as a pandas DataFrame in a long format, where each row corresponds to a unique combination of the facets and the response variable.
 
  ```markdown
   | Person | i | o | Response |
